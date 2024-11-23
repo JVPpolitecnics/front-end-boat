@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect, useTransition } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
-const socket = new WebSocket("wss://back-end-boat.onrender.com:8080");
+const socket = new WebSocket("wss://back-end-boat.onrender.com/8080");
 
 socket.onopen = () => {
     console.log("Conectado al servidor WebSocket");
